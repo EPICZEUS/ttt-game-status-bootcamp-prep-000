@@ -28,4 +28,5 @@ def won?(board)
 end
 
 def full?(board)
-  board.all?{|val| ["X", "O"].include?(val)
+  board.all?{|val| ["X", "O"].include?(val)}
+end
