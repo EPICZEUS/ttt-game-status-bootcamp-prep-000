@@ -19,5 +19,6 @@ def won?(board)
   WIN_COMBINATIONS.each do |combo|
     if combo.each{board[combo] == "X"}
       return combo
+    end
   end
 end
