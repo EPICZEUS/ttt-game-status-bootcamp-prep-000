@@ -17,8 +17,10 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
-    
-    if combo.all?{|val| board[val] == nil}
+    val1 = board[combo[0]]
+    val2 = board[combo[1]]
+    val3 = board[combo[2]]
+    if val1 == val2 && val2 == val3
       return combo
     end
   end
