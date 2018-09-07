@@ -17,8 +17,8 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
-    player = combo[0]
-    if ["X", "O"].include?(player) && combo.all?{|val| board[val] == player}
+    
+    if combo.all?{|val| board[val] == nil}
       return combo
     end
   end
