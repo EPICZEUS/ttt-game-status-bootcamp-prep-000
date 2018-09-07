@@ -22,4 +22,5 @@ def won?(board)
       return combo
     end
   end
+  false
 end
