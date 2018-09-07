@@ -38,3 +38,10 @@ end
 def over?(board)
   draw?(board) || won?(board)
 end
+
+def winner(board)
+  combo = won?(board)
+  if combo
+    return board[combo[0]]
+  end
+end
