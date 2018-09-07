@@ -30,3 +30,7 @@ end
 def full?(board)
   board.all?{|val| ["X", "O"].include?(val)}
 end
+
+def draw?(board)
+  !won?(board)
+end
